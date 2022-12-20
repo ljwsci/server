@@ -1,0 +1,4 @@
+>>>su 
+{su admin};
+>>>setip=  serverip;
+>>>end;
