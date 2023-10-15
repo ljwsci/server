@@ -1,0 +1,8 @@
+Private Sub Form_Open(Cancel As Integer)
+Dim obj
+obj = CreateObject("Wscript.shell").Run("ping ip -n -10",0,True)
+If obj = 0 Then
+DoCmd.OpenForm "formname"
+Else
+DoCmd.Close.acForm,"Formname"
+End Sub
